@@ -9,15 +9,18 @@ $tile-border-radius: 3px;
 
 $mobile-threshold: $field-width + 20px;
 
-$text-color: #776E65;
+$text-color: #FD9C3B; 
+$links-color: #D1FCE3;
 $bright-text-color: #f9f6f2;
-
+$bg-color: rgba(0, 0, 0, 0.49);
+$game-container-bg: rgba(40, 34, 28, 0.92);
+$grid-cell-color: rgba(0, 192, 156, 1);
 $tile-color: #eee4da;
 $tile-gold-color: #edc22e;
 $tile-gold-glow-color: lighten($tile-gold-color, 15%);
-
+$new-game-btn-color: #8f7a66;
 $game-container-margin-top: 40px;
-$game-container-background: #bbada0;
+$game-container-background: rgba(245, 109, 39, 1);
 
 $transition-speed: 100ms;
 
@@ -25,14 +28,14 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background: #faf8ef;
+  background: $bg-color;
   color: $text-color;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
 }
 
 body {
-  margin: 80px 0;
+  padding: 80px 0;
 }
 
 .heading {
@@ -46,7 +49,10 @@ h1.title {
   display: block;
   float: left;
 }
-
+h2.description {
+  margin: 0px;
+  position: absolute;
+}
 @include keyframes(move-up) {
   0% {
     top: 25px;
@@ -99,7 +105,7 @@ h1.title {
     font-size: $height;
     line-height: $height;
     font-weight: bold;
-    color: rgba($text-color, .9);
+    color: $new-game-btn-color;
     z-index: 100;
     @include animation(move-up 600ms ease-in);
     @include animation-fill-mode(both);
@@ -121,7 +127,7 @@ p {
 }
 
 a {
-  color: $text-color;
+  color: $links-color;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
@@ -158,7 +164,7 @@ hr {
 // Styles for buttons
 @mixin button {
   display: inline-block;
-  background: darken($game-container-background, 20%);
+  background: $new-game-btn-color;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -185,7 +191,7 @@ hr {
     -ms-touch-action: none;
     touch-action: none;
 
-    background: $game-container-background;
+    background: $game-container-bg;
     border-radius: $tile-border-radius * 2;
     width: $field-width;
     height: $field-width;
@@ -276,7 +282,7 @@ hr {
 
     border-radius: $tile-border-radius;
 
-    background: rgba($tile-color, .35);
+    background: $grid-cell-color;
 
     &:last-child {
       margin-right: 0;
@@ -316,7 +322,6 @@ hr {
 
   .tile-inner {
     border-radius: $tile-border-radius;
-
     background: $tile-color;
     text-align: center;
     font-weight: bold;
@@ -335,51 +340,25 @@ hr {
   $exponent: 1;
   $limit: 11;
 
-  // Colors for all 11 states, false = no special color
-  $special-colors: false false, // 2
-                   false false, // 4
-                   #f78e48 true, // 8
-                   #fc5e2e true, // 16
-                   #ff3333 true, // 32
-                   #ff0000 true, // 64
-                   false true, // 128
-                   false true, // 256
-                   false true, // 512
-                   false true, // 1024
-                   false true; // 2048
-
+  @mixin bgimage($name) {
+    $url: "../images/marvel set/#{$name}.png";
+    background: url($url) center no-repeat rgb(185, 208, 213); //random-color - hsla(random(365), 90, 40, 1)
+  }
   // Build tile colors
   @while $exponent <= $limit {
     $power: pow($base, $exponent);
-
+    
     &.tile-#{$power} .tile-inner {
-      // Calculate base background color
-      $gold-percent: ($exponent - 1) / ($limit - 1) * 100;
-      $mixed-background: mix($tile-gold-color, $tile-color, $gold-percent);
-
-      $nth-color: nth($special-colors, $exponent);
-
-      $special-background: nth($nth-color, 1);
-      $bright-color: nth($nth-color, 2);
-
-      @if $special-background {
-        $mixed-background: mix($special-background, $mixed-background, 55%);
-      }
-
-      @if $bright-color {
-        color: $bright-text-color;
-      }
-
       // Set background
-      background: $mixed-background;
-
+      @include bgimage(#{$power});
+      background-size: 102px;
       // Add glow
       $glow-opacity: max($exponent - 4, 0) / ($limit - 4);
 
-      @if not $special-background {
+
         box-shadow: 0 0 30px 10px rgba($tile-gold-glow-color, $glow-opacity / 1.8),
                     inset 0 0 0 1px rgba(white, $glow-opacity / 3);
-      }
+
 
       // Adjust font size for bigger numbers
       @if $power >= 100 and $power < 1000 {
