@@ -148,34 +148,60 @@ hr {
   width: 500px;
   margin: 0 auto; }
 
+/* line 154, E:/work/2048/style/main.scss */
+.img-tile-container {
+  margin: 6px 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  border: 2px solid #221d1d;
+  background: #9b9b9b;
+  position: relative; }
+  /* line 162, E:/work/2048/style/main.scss */
+  .img-tile-container:hover {
+    cursor: pointer; }
+  /* line 165, E:/work/2048/style/main.scss */
+  .img-tile-container .img-tile-preview {
+    margin: 2px;
+    width: 46px;
+    height: 46px;
+    float: left; }
+  /* line 172, E:/work/2048/style/main.scss */
+  .img-tile-container p {
+    position: absolute;
+    width: 207px;
+    left: 65px;
+    top: 13px;
+    font-weight: bold; }
+
 @-webkit-keyframes fade-in {
-  /* line 155, E:/work/2048/style/main.scss */
+  /* line 183, E:/work/2048/style/main.scss */
   0% {
     opacity: 0; }
 
-  /* line 159, E:/work/2048/style/main.scss */
+  /* line 187, E:/work/2048/style/main.scss */
   100% {
     opacity: 1; } }
 
 @-moz-keyframes fade-in {
-  /* line 155, E:/work/2048/style/main.scss */
+  /* line 183, E:/work/2048/style/main.scss */
   0% {
     opacity: 0; }
 
-  /* line 159, E:/work/2048/style/main.scss */
+  /* line 187, E:/work/2048/style/main.scss */
   100% {
     opacity: 1; } }
 
 @keyframes fade-in {
-  /* line 155, E:/work/2048/style/main.scss */
+  /* line 183, E:/work/2048/style/main.scss */
   0% {
     opacity: 0; }
 
-  /* line 159, E:/work/2048/style/main.scss */
+  /* line 187, E:/work/2048/style/main.scss */
   100% {
     opacity: 1; } }
 
-/* line 178, E:/work/2048/style/main.scss */
+/* line 206, E:/work/2048/style/main.scss */
 .game-container {
   margin-top: 40px;
   position: relative;
@@ -195,7 +221,7 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  /* line 202, E:/work/2048/style/main.scss */
+  /* line 230, E:/work/2048/style/main.scss */
   .game-container .game-message {
     display: none;
     position: absolute;
@@ -212,18 +238,18 @@ hr {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
-    /* line 215, E:/work/2048/style/main.scss */
+    /* line 243, E:/work/2048/style/main.scss */
     .game-container .game-message p {
       font-size: 60px;
       font-weight: bold;
       height: 60px;
       line-height: 60px;
       margin-top: 222px; }
-    /* line 225, E:/work/2048/style/main.scss */
+    /* line 253, E:/work/2048/style/main.scss */
     .game-container .game-message .lower {
       display: block;
       margin-top: 59px; }
-    /* line 230, E:/work/2048/style/main.scss */
+    /* line 258, E:/work/2048/style/main.scss */
     .game-container .game-message a {
       display: inline-block;
       background: #8f7a66;
@@ -234,38 +260,38 @@ hr {
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
-      /* line 235, E:/work/2048/style/main.scss */
+      /* line 263, E:/work/2048/style/main.scss */
       .game-container .game-message a.keep-playing-button {
         display: none; }
-    /* line 243, E:/work/2048/style/main.scss */
+    /* line 271, E:/work/2048/style/main.scss */
     .game-container .game-message.game-won {
       background: rgba(237, 194, 46, 0.5);
       color: #f9f6f2; }
-      /* line 247, E:/work/2048/style/main.scss */
+      /* line 275, E:/work/2048/style/main.scss */
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
-    /* line 252, E:/work/2048/style/main.scss */
+    /* line 280, E:/work/2048/style/main.scss */
     .game-container .game-message.game-won, .game-container .game-message.game-over {
       display: block; }
 
-/* line 258, E:/work/2048/style/main.scss */
+/* line 286, E:/work/2048/style/main.scss */
 .grid-container {
   position: absolute;
   z-index: 1; }
 
-/* line 263, E:/work/2048/style/main.scss */
+/* line 291, E:/work/2048/style/main.scss */
 .grid-row {
   margin-bottom: 15px; }
-  /* line 266, E:/work/2048/style/main.scss */
+  /* line 294, E:/work/2048/style/main.scss */
   .grid-row:last-child {
     margin-bottom: 0; }
-  /* line 270, E:/work/2048/style/main.scss */
+  /* line 298, E:/work/2048/style/main.scss */
   .grid-row:after {
     content: "";
     display: block;
     clear: both; }
 
-/* line 277, E:/work/2048/style/main.scss */
+/* line 305, E:/work/2048/style/main.scss */
 .grid-cell {
   width: 106.25px;
   height: 106.25px;
@@ -273,102 +299,102 @@ hr {
   float: left;
   border-radius: 3px;
   background: #00c09c; }
-  /* line 287, E:/work/2048/style/main.scss */
+  /* line 315, E:/work/2048/style/main.scss */
   .grid-cell:last-child {
     margin-right: 0; }
 
-/* line 292, E:/work/2048/style/main.scss */
+/* line 320, E:/work/2048/style/main.scss */
 .tile-container {
   position: absolute;
   z-index: 2; }
 
-/* line 298, E:/work/2048/style/main.scss */
+/* line 326, E:/work/2048/style/main.scss */
 .tile, .tile .tile-inner {
   width: 107px;
   height: 107px;
   line-height: 107px; }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-1-1 {
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
   transform: translate(0px, 0px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-1-2 {
   -webkit-transform: translate(0px, 121px);
   -moz-transform: translate(0px, 121px);
   transform: translate(0px, 121px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-1-3 {
   -webkit-transform: translate(0px, 242px);
   -moz-transform: translate(0px, 242px);
   transform: translate(0px, 242px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-1-4 {
   -webkit-transform: translate(0px, 363px);
   -moz-transform: translate(0px, 363px);
   transform: translate(0px, 363px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-2-1 {
   -webkit-transform: translate(121px, 0px);
   -moz-transform: translate(121px, 0px);
   transform: translate(121px, 0px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-2-2 {
   -webkit-transform: translate(121px, 121px);
   -moz-transform: translate(121px, 121px);
   transform: translate(121px, 121px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-2-3 {
   -webkit-transform: translate(121px, 242px);
   -moz-transform: translate(121px, 242px);
   transform: translate(121px, 242px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-2-4 {
   -webkit-transform: translate(121px, 363px);
   -moz-transform: translate(121px, 363px);
   transform: translate(121px, 363px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-3-1 {
   -webkit-transform: translate(242px, 0px);
   -moz-transform: translate(242px, 0px);
   transform: translate(242px, 0px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-3-2 {
   -webkit-transform: translate(242px, 121px);
   -moz-transform: translate(242px, 121px);
   transform: translate(242px, 121px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-3-3 {
   -webkit-transform: translate(242px, 242px);
   -moz-transform: translate(242px, 242px);
   transform: translate(242px, 242px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-3-4 {
   -webkit-transform: translate(242px, 363px);
   -moz-transform: translate(242px, 363px);
   transform: translate(242px, 363px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-4-1 {
   -webkit-transform: translate(363px, 0px);
   -moz-transform: translate(363px, 0px);
   transform: translate(363px, 0px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-4-2 {
   -webkit-transform: translate(363px, 121px);
   -moz-transform: translate(363px, 121px);
   transform: translate(363px, 121px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-4-3 {
   -webkit-transform: translate(363px, 242px);
   -moz-transform: translate(363px, 242px);
   transform: translate(363px, 242px); }
-/* line 307, E:/work/2048/style/main.scss */
+/* line 335, E:/work/2048/style/main.scss */
 .tile.tile-position-4-4 {
   -webkit-transform: translate(363px, 363px);
   -moz-transform: translate(363px, 363px);
   transform: translate(363px, 363px); }
 
-/* line 320, E:/work/2048/style/main.scss */
+/* line 348, E:/work/2048/style/main.scss */
 .tile {
   position: absolute;
   -webkit-transition: 100ms ease-in-out;
@@ -377,7 +403,7 @@ hr {
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
-  /* line 323, E:/work/2048/style/main.scss */
+  /* line 351, E:/work/2048/style/main.scss */
   .tile .tile-inner {
     border-radius: 3px;
     background: #eee4da;
@@ -385,37 +411,37 @@ hr {
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-2 .tile-inner {
     background: url("../images/marvel set/2.png") center no-repeat #b9d0d5;
     background-size: 102px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-4 .tile-inner {
     background: url("../images/marvel set/4.png") center no-repeat #b9d0d5;
     background-size: 102px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-8 .tile-inner {
     background: url("../images/marvel set/8.png") center no-repeat #b9d0d5;
     background-size: 102px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-16 .tile-inner {
     background: url("../images/marvel set/16.png") center no-repeat #b9d0d5;
     background-size: 102px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-32 .tile-inner {
     background: url("../images/marvel set/32.png") center no-repeat #b9d0d5;
     background-size: 102px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.0793651), inset 0 0 0 1px rgba(255, 255, 255, 0.047619); }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-64 .tile-inner {
     background: url("../images/marvel set/64.png") center no-repeat #b9d0d5;
     background-size: 102px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.15873), inset 0 0 0 1px rgba(255, 255, 255, 0.0952381); }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-128 .tile-inner {
     background: url("../images/marvel set/128.png") center no-repeat #b9d0d5;
     background-size: 102px;
@@ -424,7 +450,7 @@ hr {
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-256 .tile-inner {
     background: url("../images/marvel set/256.png") center no-repeat #b9d0d5;
     background-size: 102px;
@@ -433,7 +459,7 @@ hr {
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-512 .tile-inner {
     background: url("../images/marvel set/512.png") center no-repeat #b9d0d5;
     background-size: 102px;
@@ -442,7 +468,7 @@ hr {
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-1024 .tile-inner {
     background: url("../images/marvel set/1024.png") center no-repeat #b9d0d5;
     background-size: 102px;
@@ -451,7 +477,7 @@ hr {
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
-  /* line 351, E:/work/2048/style/main.scss */
+  /* line 379, E:/work/2048/style/main.scss */
   .tile.tile-2048 .tile-inner {
     background: url("../images/marvel set/2048.png") center no-repeat #b9d0d5;
     background-size: 102px;
@@ -460,7 +486,7 @@ hr {
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
-  /* line 384, E:/work/2048/style/main.scss */
+  /* line 412, E:/work/2048/style/main.scss */
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
     background: #3c3a32;
@@ -470,14 +496,14 @@ hr {
         font-size: 10px; } }
 
 @-webkit-keyframes appear {
-  /* line 397, E:/work/2048/style/main.scss */
+  /* line 425, E:/work/2048/style/main.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
 
-  /* line 402, E:/work/2048/style/main.scss */
+  /* line 430, E:/work/2048/style/main.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -485,14 +511,14 @@ hr {
     transform: scale(1); } }
 
 @-moz-keyframes appear {
-  /* line 397, E:/work/2048/style/main.scss */
+  /* line 425, E:/work/2048/style/main.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
 
-  /* line 402, E:/work/2048/style/main.scss */
+  /* line 430, E:/work/2048/style/main.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -500,21 +526,21 @@ hr {
     transform: scale(1); } }
 
 @keyframes appear {
-  /* line 397, E:/work/2048/style/main.scss */
+  /* line 425, E:/work/2048/style/main.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
 
-  /* line 402, E:/work/2048/style/main.scss */
+  /* line 430, E:/work/2048/style/main.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1); } }
 
-/* line 408, E:/work/2048/style/main.scss */
+/* line 436, E:/work/2048/style/main.scss */
 .tile-new .tile-inner {
   -webkit-animation: appear 200ms ease 100ms;
   -moz-animation: appear 200ms ease 100ms;
@@ -524,63 +550,63 @@ hr {
   animation-fill-mode: backwards; }
 
 @-webkit-keyframes pop {
-  /* line 414, E:/work/2048/style/main.scss */
+  /* line 442, E:/work/2048/style/main.scss */
   0% {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
 
-  /* line 418, E:/work/2048/style/main.scss */
+  /* line 446, E:/work/2048/style/main.scss */
   50% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2); }
 
-  /* line 422, E:/work/2048/style/main.scss */
+  /* line 450, E:/work/2048/style/main.scss */
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1); } }
 
 @-moz-keyframes pop {
-  /* line 414, E:/work/2048/style/main.scss */
+  /* line 442, E:/work/2048/style/main.scss */
   0% {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
 
-  /* line 418, E:/work/2048/style/main.scss */
+  /* line 446, E:/work/2048/style/main.scss */
   50% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2); }
 
-  /* line 422, E:/work/2048/style/main.scss */
+  /* line 450, E:/work/2048/style/main.scss */
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1); } }
 
 @keyframes pop {
-  /* line 414, E:/work/2048/style/main.scss */
+  /* line 442, E:/work/2048/style/main.scss */
   0% {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
 
-  /* line 418, E:/work/2048/style/main.scss */
+  /* line 446, E:/work/2048/style/main.scss */
   50% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2); }
 
-  /* line 422, E:/work/2048/style/main.scss */
+  /* line 450, E:/work/2048/style/main.scss */
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1); } }
 
-/* line 427, E:/work/2048/style/main.scss */
+/* line 455, E:/work/2048/style/main.scss */
 .tile-merged .tile-inner {
   z-index: 20;
   -webkit-animation: pop 200ms ease 100ms;
@@ -596,13 +622,13 @@ hr {
   display: block;
   clear: both; }
 
-/* line 437, E:/work/2048/style/main.scss */
+/* line 465, E:/work/2048/style/main.scss */
 .game-intro {
   float: left;
   line-height: 42px;
   margin-bottom: 0; }
 
-/* line 443, E:/work/2048/style/main.scss */
+/* line 471, E:/work/2048/style/main.scss */
 .restart-button {
   display: inline-block;
   background: #8f7a66;
@@ -616,48 +642,52 @@ hr {
   text-align: center;
   float: right; }
 
-/* line 450, E:/work/2048/style/main.scss */
+/* line 478, E:/work/2048/style/main.scss */
 .game-explanation {
   margin-top: 50px; }
 
 @media screen and (max-width: 520px) {
-  /* line 463, E:/work/2048/style/main.scss */
+  /* line 491, E:/work/2048/style/main.scss */
   html, body {
     font-size: 15px; }
 
-  /* line 467, E:/work/2048/style/main.scss */
+  /* line 495, E:/work/2048/style/main.scss */
   body {
     margin: 20px 0;
     padding: 0 20px; }
 
-  /* line 472, E:/work/2048/style/main.scss */
+  /* line 500, E:/work/2048/style/main.scss */
   h1.title {
     font-size: 27px;
     margin-top: 15px; }
 
-  /* line 477, E:/work/2048/style/main.scss */
+  /* line 504, E:/work/2048/style/main.scss */
+  h2.description {
+    font-size: 16px; }
+
+  /* line 507, E:/work/2048/style/main.scss */
   .container {
     width: 280px;
     margin: 0 auto; }
 
-  /* line 482, E:/work/2048/style/main.scss */
+  /* line 512, E:/work/2048/style/main.scss */
   .score-container, .best-container {
     margin-top: 0;
     padding: 15px 10px;
     min-width: 40px; }
 
-  /* line 488, E:/work/2048/style/main.scss */
+  /* line 518, E:/work/2048/style/main.scss */
   .heading {
     margin-bottom: 10px; }
 
-  /* line 493, E:/work/2048/style/main.scss */
+  /* line 523, E:/work/2048/style/main.scss */
   .game-intro {
     width: 55%;
     display: block;
     box-sizing: border-box;
     line-height: 1.65; }
 
-  /* line 500, E:/work/2048/style/main.scss */
+  /* line 530, E:/work/2048/style/main.scss */
   .restart-button {
     width: 42%;
     padding: 0;
@@ -665,7 +695,11 @@ hr {
     box-sizing: border-box;
     margin-top: 2px; }
 
-  /* line 178, E:/work/2048/style/main.scss */
+  /* line 537, E:/work/2048/style/main.scss */
+  .tile, .tile-inner {
+    background-size: 54px !important; }
+
+  /* line 206, E:/work/2048/style/main.scss */
   .game-container {
     margin-top: 17px;
     position: relative;
@@ -685,7 +719,7 @@ hr {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    /* line 202, E:/work/2048/style/main.scss */
+    /* line 230, E:/work/2048/style/main.scss */
     .game-container .game-message {
       display: none;
       position: absolute;
@@ -702,18 +736,18 @@ hr {
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
-      /* line 215, E:/work/2048/style/main.scss */
+      /* line 243, E:/work/2048/style/main.scss */
       .game-container .game-message p {
         font-size: 60px;
         font-weight: bold;
         height: 60px;
         line-height: 60px;
         margin-top: 222px; }
-      /* line 225, E:/work/2048/style/main.scss */
+      /* line 253, E:/work/2048/style/main.scss */
       .game-container .game-message .lower {
         display: block;
         margin-top: 59px; }
-      /* line 230, E:/work/2048/style/main.scss */
+      /* line 258, E:/work/2048/style/main.scss */
       .game-container .game-message a {
         display: inline-block;
         background: #8f7a66;
@@ -724,38 +758,38 @@ hr {
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
-        /* line 235, E:/work/2048/style/main.scss */
+        /* line 263, E:/work/2048/style/main.scss */
         .game-container .game-message a.keep-playing-button {
           display: none; }
-      /* line 243, E:/work/2048/style/main.scss */
+      /* line 271, E:/work/2048/style/main.scss */
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
         color: #f9f6f2; }
-        /* line 247, E:/work/2048/style/main.scss */
+        /* line 275, E:/work/2048/style/main.scss */
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
-      /* line 252, E:/work/2048/style/main.scss */
+      /* line 280, E:/work/2048/style/main.scss */
       .game-container .game-message.game-won, .game-container .game-message.game-over {
         display: block; }
 
-  /* line 258, E:/work/2048/style/main.scss */
+  /* line 286, E:/work/2048/style/main.scss */
   .grid-container {
     position: absolute;
     z-index: 1; }
 
-  /* line 263, E:/work/2048/style/main.scss */
+  /* line 291, E:/work/2048/style/main.scss */
   .grid-row {
     margin-bottom: 10px; }
-    /* line 266, E:/work/2048/style/main.scss */
+    /* line 294, E:/work/2048/style/main.scss */
     .grid-row:last-child {
       margin-bottom: 0; }
-    /* line 270, E:/work/2048/style/main.scss */
+    /* line 298, E:/work/2048/style/main.scss */
     .grid-row:after {
       content: "";
       display: block;
       clear: both; }
 
-  /* line 277, E:/work/2048/style/main.scss */
+  /* line 305, E:/work/2048/style/main.scss */
   .grid-cell {
     width: 57.5px;
     height: 57.5px;
@@ -763,112 +797,112 @@ hr {
     float: left;
     border-radius: 3px;
     background: #00c09c; }
-    /* line 287, E:/work/2048/style/main.scss */
+    /* line 315, E:/work/2048/style/main.scss */
     .grid-cell:last-child {
       margin-right: 0; }
 
-  /* line 292, E:/work/2048/style/main.scss */
+  /* line 320, E:/work/2048/style/main.scss */
   .tile-container {
     position: absolute;
     z-index: 2; }
 
-  /* line 298, E:/work/2048/style/main.scss */
+  /* line 326, E:/work/2048/style/main.scss */
   .tile, .tile .tile-inner {
     width: 58px;
     height: 58px;
     line-height: 58px; }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-1-1 {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     transform: translate(0px, 0px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-1-2 {
     -webkit-transform: translate(0px, 67px);
     -moz-transform: translate(0px, 67px);
     transform: translate(0px, 67px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-1-3 {
     -webkit-transform: translate(0px, 135px);
     -moz-transform: translate(0px, 135px);
     transform: translate(0px, 135px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-1-4 {
     -webkit-transform: translate(0px, 202px);
     -moz-transform: translate(0px, 202px);
     transform: translate(0px, 202px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-2-1 {
     -webkit-transform: translate(67px, 0px);
     -moz-transform: translate(67px, 0px);
     transform: translate(67px, 0px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-2-2 {
     -webkit-transform: translate(67px, 67px);
     -moz-transform: translate(67px, 67px);
     transform: translate(67px, 67px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-2-3 {
     -webkit-transform: translate(67px, 135px);
     -moz-transform: translate(67px, 135px);
     transform: translate(67px, 135px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-2-4 {
     -webkit-transform: translate(67px, 202px);
     -moz-transform: translate(67px, 202px);
     transform: translate(67px, 202px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-3-1 {
     -webkit-transform: translate(135px, 0px);
     -moz-transform: translate(135px, 0px);
     transform: translate(135px, 0px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-3-2 {
     -webkit-transform: translate(135px, 67px);
     -moz-transform: translate(135px, 67px);
     transform: translate(135px, 67px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-3-3 {
     -webkit-transform: translate(135px, 135px);
     -moz-transform: translate(135px, 135px);
     transform: translate(135px, 135px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-3-4 {
     -webkit-transform: translate(135px, 202px);
     -moz-transform: translate(135px, 202px);
     transform: translate(135px, 202px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-4-1 {
     -webkit-transform: translate(202px, 0px);
     -moz-transform: translate(202px, 0px);
     transform: translate(202px, 0px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-4-2 {
     -webkit-transform: translate(202px, 67px);
     -moz-transform: translate(202px, 67px);
     transform: translate(202px, 67px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-4-3 {
     -webkit-transform: translate(202px, 135px);
     -moz-transform: translate(202px, 135px);
     transform: translate(202px, 135px); }
-  /* line 307, E:/work/2048/style/main.scss */
+  /* line 335, E:/work/2048/style/main.scss */
   .tile.tile-position-4-4 {
     -webkit-transform: translate(202px, 202px);
     -moz-transform: translate(202px, 202px);
     transform: translate(202px, 202px); }
 
-  /* line 512, E:/work/2048/style/main.scss */
+  /* line 544, E:/work/2048/style/main.scss */
   .tile .tile-inner {
     font-size: 35px; }
 
-  /* line 517, E:/work/2048/style/main.scss */
+  /* line 549, E:/work/2048/style/main.scss */
   .game-message p {
     font-size: 30px !important;
     height: 30px !important;
     line-height: 30px !important;
     margin-top: 90px !important; }
-  /* line 524, E:/work/2048/style/main.scss */
+  /* line 556, E:/work/2048/style/main.scss */
   .game-message .lower {
     margin-top: 30px !important; }
  }
