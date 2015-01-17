@@ -151,6 +151,34 @@ hr {
   margin: 0 auto;
 }
 
+.img-tile-container {
+  margin: 6px 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  border: 2px solid rgb(34, 29, 29);
+  background: rgb(155, 155, 155);
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+  .img-tile-preview {
+  margin: 2px;
+  width: 46px;
+  height: 46px;
+  float: left;
+
+  }
+  p {
+    position: absolute;
+    width: 207px;
+    left: 65px;
+    top: 13px;
+    font-weight: bold;
+  }
+}
+
+
 @include keyframes(fade-in) {
   0% {
     opacity: 0;
@@ -288,7 +316,7 @@ hr {
       margin-right: 0;
     }
   }
-
+  
   .tile-container {
     position: absolute;
     z-index: 2;
@@ -473,7 +501,9 @@ hr {
     font-size: 27px;
     margin-top: 15px;
   }
-
+  h2.description {
+    font-size: 16px;
+  }
   .container {
     width: $field-width;
     margin: 0 auto;
@@ -504,7 +534,9 @@ hr {
     box-sizing: border-box;
     margin-top: 2px;
   }
-
+  .tile, .tile-inner {
+    background-size: 54px!important;
+  }
   // Render the game field at the right width
   @include game-field;
 
