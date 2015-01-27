@@ -1,5 +1,5 @@
 # 2048-marvel
-Fork of original version of 2048 by [Gabriele Cirulli](https://github.com/gabrielecirulli/2048)
+Fork of original 2048 by [Gabriele Cirulli](https://github.com/gabrielecirulli/2048)
 
 Live demo on [github](http://thisninja.github.io/2048-marvel/). Enjoy :trophy:
 
